@@ -1,0 +1,45 @@
+@import '../../App.scss';
+.title {
+    font-size: 32px;
+    font-family: $font-main;
+}
+
+.secondTitle {
+    font-size: 60px;
+    font-family: $font-main;
+}
+
+.thirdTitle {
+    font-size: 24px;
+    font-family: $font-main;
+}
+
+.normal {
+    font-size: 16px;
+    font-family: $font-main;
+    line-height: 1.6;
+}
+
+.small {
+    font-size: 14px;
+    font-family: $font-main;
+    line-height: 1.6;
+}
+
+@media screen and (max-width: $break-point-tablet) {
+    .title {
+        font-size: 4rem;
+    }
+
+    .secondTitle {
+        font-size: 3rem;
+    }
+
+    .thirdTitle {
+        font-size: 2.5rem;
+    }
+
+    .normal {
+        font-size: 16px;
+    }
+}

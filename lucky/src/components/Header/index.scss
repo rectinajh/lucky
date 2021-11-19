@@ -1,0 +1,262 @@
+@import '../../App.scss';
+
+.header {
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 80px;
+
+    background: #202557;
+    // background: transparent;
+    // box-shadow: 0 2px 2px rgba(255, 255, 255, 0.2);
+    // font-size: 20px;
+
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: $viewMaxWidth;
+        height: 100%;
+    }
+
+    .right {
+        display: flex;
+        align-items: center;
+        flex: 1;
+        height: 100%;
+
+        .right-bg {
+            display: none;
+        }
+
+        .nav-container {
+            flex: 1;
+            height: 100%;
+            .nav-list {
+                display: flex;
+                align-items: center;
+                // margin: 0;
+                height: 100%;
+                list-style: none;
+                margin: 0;
+
+                .nav-item {
+                    display: none;
+                    margin: 0 10px;
+                    font-size: 18px;
+                    color: #fff;
+                    border-radius: 100px;
+                    cursor: pointer;
+
+                    &.profile {
+                        display: none;
+                    }
+
+                    a {
+                        display: inline-block;
+                        padding: 10px 16px;
+                        color: #fff;
+                        text-decoration: none;
+                        font-size: 18px;
+                        font-weight: bold;
+
+                        &:hover {
+                            color: $mainColor;
+                        }
+
+                        &.active {
+                            border-bottom: 1px solid $mainColor;
+                        }
+                    }
+                }
+            }
+        }
+
+        .connect-button {
+            margin-bottom: -25px;
+            padding: 10px 20px;
+            background-color: #214652;
+            font-size: 0.8rem;
+            color: #fff;
+            border: 0;
+            border-radius: 100px;
+            cursor: pointer;
+
+            &.wrong {
+                background-color: #ff6871;
+            }
+        }
+    }
+}
+
+.menu-icon {
+    display: none;
+}
+
+.logo {
+    width: 344px;
+    height: 72px;
+    margin-right: 100px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: $break-point-laptop) {
+    .header {
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+
+        .content {
+            width: 100%;
+
+            .menu-icon {
+                display: block;
+                position: relative;
+                width: 24px;
+                height: 24px;
+                font-size: 0;
+                z-index: 2;
+
+                &::before,
+                &::after {
+                    display: block;
+                    position: absolute;
+                    left: 2px;
+                    content: '';
+                    width: 20px;
+                    height: 2px;
+                    background: $mainColor;
+                    transition: 0.3s;
+                    cursor: pointer;
+                }
+
+                &::before {
+                    top: 6.5px;
+                }
+
+                &::after {
+                    top: 14.5px;
+                }
+            }
+
+            .right {
+                display: none;
+                flex-direction: column;
+                justify-content: center;
+                position: fixed;
+                z-index: -1;
+                top: 0;
+                right: 0;
+                width: 80vw;
+                height: 100vh;
+                font-size: 0;
+                opacity: 0;
+                transition: 0.3s;
+                border-left: 4px solid $mainColor;
+
+                .right-bg {
+                    display: block;
+                    position: fixed;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    background: transparent;
+                    z-index: -1;
+                }
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    background: $lightDark;
+                    opacity: 0.8;
+                    z-index: -1;
+                }
+
+                .nav-container {
+                    flex: initial;
+                    width: 100%;
+                    height: initial;
+
+                    .nav-list {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        padding-left: 0;
+                        margin-top: -100px;
+                        width: 100%;
+
+                        .nav-item {
+                            margin-bottom: 20px;
+                            padding: 0;
+                            width: 100%;
+                            text-align: center;
+                            font-size: 1.6rem;
+                            background-color: transparent;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            a {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: max-content;
+
+                                img {
+                                    width: 24px;
+                                    height: 24px;
+                                    margin-right: 8px;
+                                }
+                            }
+
+                            &.profile {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &.open {
+            .menu-icon {
+                &::before,
+                &::after {
+                    top: 10px;
+                }
+
+                &::before {
+                    transform: rotate(45deg);
+                }
+
+                &::after {
+                    transform: rotate(-45deg);
+                }
+            }
+
+            .right {
+                display: flex;
+                opacity: 1;
+                z-index: 1;
+            }
+        }
+    }
+
+    .logo {
+        height: 25px;
+        max-width: 200px;
+    }
+
+    .MuiMenuItem-root {
+        font-size: 1.6rem !important;
+    }
+}

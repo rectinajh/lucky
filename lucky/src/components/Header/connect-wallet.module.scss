@@ -1,0 +1,62 @@
+@import '../../App.scss';
+.button {
+    width: 140px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 14px !important;
+    padding: 10px 20px !important;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.menuWrapper {
+    :global {
+        .MuiPaper-root {
+            background: $darkGreen;
+            color: #fff;
+            width: 140px;
+            // padding: 10px;
+            box-sizing: border-box;
+
+            .MuiMenu-list {
+                padding: 0;
+            }
+
+            .MuiListItem-root {
+                padding: 0 !important;
+
+                a {
+                    padding: 15px 20px !important;
+                    width: 100%;
+                }
+
+                &:hover {
+                    background: $lightDark;
+                }
+            }
+        }
+    }
+}
+
+.menu {
+    background: $darkGreen;
+
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+@media screen and (max-width: $break-point-laptop) {
+    .menuWrapper {
+        display: none;
+    }
+
+    .hideDropdownIcon {
+        display: none !important;
+    }
+}

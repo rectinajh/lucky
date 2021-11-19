@@ -1,0 +1,36 @@
+.border {
+    position: absolute;
+    background-color: #000;
+
+    &-top,
+    &-bottom {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 5px;
+    }
+
+    &-top {
+        top: -5px;
+    }
+
+    &-bottom {
+        bottom: -5px;
+    }
+
+    &-left,
+    &-right {
+        top: 50%;
+        transform: translateY(-50%);
+        height: 100%;
+        width: 5px;
+    }
+
+    &-left {
+        left: -5px;
+    }
+
+    &-right {
+        right: -5px;
+    }
+}

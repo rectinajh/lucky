@@ -1,0 +1,44 @@
+.c42--block {
+    position: relative;
+    padding: 4px;
+
+    > .content {
+        height: 100%;
+        width: 100%;
+    }
+
+    > .border {
+        position: absolute;
+        z-index: 2;
+
+        &.row {
+            width: calc(100% - 16px);
+            height: 4px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        &.col {
+            width: 4px;
+            height: calc(100% - 16px);
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        &.top {
+            top: 0;
+        }
+
+        &.bottom {
+            bottom: 0;
+        }
+
+        &.left {
+            left: 0;
+        }
+
+        &.right {
+            right: 0;
+        }
+    }
+}

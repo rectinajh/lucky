@@ -1,0 +1,63 @@
+@import '../../App.scss';
+
+.select.MuiInputBase-root {
+    position: relative;
+    display: inline-block;
+    height: initial;
+    background: none;
+    color: #fff;
+    font-size: 1rem;
+    border: 1px solid #fff;
+    padding: 0 16px;
+    border-radius: 24px;
+    padding-right: 26px;
+    // border-bottom: 1px solid #fff;
+
+    .MuiSelect-select.MuiSelect-select {
+        padding: 7px 5px 6px 4px;
+    }
+
+    .MuiSelect-select:focus {
+        background: none;
+    }
+
+    .MuiSelect-icon {
+        // display: none;
+        color: #fff;
+        font-size: 1rem;
+        margin-top: 3px;
+        right: 10px;
+    }
+}
+
+.MuiMenuItem-root {
+    padding: 6px !important;
+    font-size: 1rem !important;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.prefix {
+    margin-right: 5px;
+    width: 20px;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: $break-point-laptop) {
+    .select {
+        margin: 0;
+        font-size: 1.6rem;
+    }
+
+    .select.MuiInputBase-root {
+        color: #fff;
+        font-size: 2rem;
+
+        .MuiSelect-icon {
+            font-size: 2rem;
+            color: #fff;
+        }
+    }
+}

@@ -1,0 +1,111 @@
+@import '../../App.scss';
+.navWrapper {
+    width: 256px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    position: relative;
+    padding: 30px 20px;
+    border-right: 1px solid #e4e4e4;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .top {
+        .logo {
+            display: inline-block;
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+
+        .links {
+            margin-top: 30px;
+
+            .link {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                width: 100%;
+                height: 56px;
+                padding: 16px;
+                box-sizing: border-box;
+                margin-top: 10px;
+                text-decoration-line: none;
+
+                img {
+                    width: 24px;
+                    height: 24px;
+                    margin-right: 8px;
+                }
+
+                &:global {
+                    &:hover,
+                    &.active {
+                        background: #172645;
+                        border-radius: 12px;
+                    }
+                }
+            }
+        }
+    }
+
+    .bottom {
+        .balance {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                width: 36px;
+                height: 36px;
+                margin-right: 8px;
+            }
+        }
+        .soialMedia {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            padding-bottom: 12px;
+
+            a {
+                width: 30px;
+                height: 30px;
+                border-radius: 15px;
+                background-size: 70%;
+                background-position: center;
+                background-repeat: no-repeat;
+                // background-color: #70a1ff;
+                &:not(:last-child) {
+                    margin-right: 16px;
+                }
+
+                &.twitter {
+                    background-image: url(../../assets/images/twitter.png);
+                }
+
+                &.gitbook {
+                    background-image: url(../../assets/images/gitbook.png);
+                }
+
+                &.medium {
+                    background-image: url(../../assets/images/medium.png);
+                }
+
+                &.telegram {
+                    background-image: url(../../assets/images/telegram.png);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $break-point-tablet) {
+    .navWrapper {
+        display: none;
+    }
+}

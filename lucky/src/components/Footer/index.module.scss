@@ -1,0 +1,75 @@
+@import '../../App.scss';
+.footer {
+    position: relative;
+    z-index: 1;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 100%;
+    background: #141416;
+    height: 66px;
+
+    .content {
+        width: $viewMaxWidth;
+        margin: 0 auto;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        box-sizing: border-box;
+        padding-bottom: 12px;
+        height: 100%;
+
+        font-size: 12px;
+        color: #777e90;
+
+        .soialMedia {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            padding-bottom: 12px;
+
+            a {
+                width: 22px;
+                height: 22px;
+                background-size: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                &:not(:last-child) {
+                    margin-right: 20px;
+                }
+
+                &.twitter {
+                    background-image: url(../../assets/images/twitter.png);
+                }
+
+                &.gitbook {
+                    background-image: url(../../assets/images/gitbook.png);
+                }
+
+                &.medium {
+                    background-image: url(../../assets/images/medium.png);
+                }
+
+                &.telegram {
+                    background-image: url(../../assets/images/telegram.png);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $break-point-tablet) {
+    .footer {
+        width: 100vw;
+        .content {
+            width: 100%;
+            padding: 0 2rem;
+            justify-content: center;
+            align-items: center;
+
+            .soialMedia {
+                padding-bottom: 0;
+            }
+        }
+    }
+}

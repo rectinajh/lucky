@@ -1,0 +1,217 @@
+$break-point-laptop: 1024px;
+$break-point-tablet: 768px;
+
+$font-light: 200;
+$font-normal: 400;
+$font-semi-bold: 500;
+$font-bold: 700;
+
+$darkGreen: #1e3e59;
+$lightGreen: #009ea9;
+$darkBlue: #0c1830;
+$yellow: #ffb200;
+$lightDark: #0b1829;
+$deepDark: #050505;
+$pink: #eb00ff;
+$darkGrey: #222e3d;
+
+$lightBlue: #72d9f5;
+$mainColor: #6b50ff;
+$viewMaxWidth: 1200px;
+$font-main: 'main', 'DIN-Medium';
+
+html {
+    font-size: 16px;
+}
+
+@mixin title {
+    margin-bottom: 30px;
+    font-size: 1.6rem;
+    // font-weight: $font-bold;
+    line-height: 2;
+    color: #fff;
+}
+
+@mixin sub-title {
+    font-size: 1.2rem;
+    line-height: 2;
+}
+
+@mixin description {
+    font-size: 1.2rem;
+    line-height: 3;
+}
+
+@mixin sub-description {
+    font-size: 1rem;
+    line-height: 3;
+}
+
+@mixin gradientBlue {
+    background: linear-gradient(to bottom, #36b7f4, #041638);
+}
+
+html {
+    body {
+        padding: 0 !important;
+        overflow-y: auto !important;
+        overflow-x: hidden;
+    }
+
+    &.zh_cn {
+        body {
+            font-weight: 400;
+        }
+    }
+}
+
+.bold {
+    font-weight: 700 !important;
+    color: #fff !important;
+}
+
+img {
+    object-fit: contain;
+}
+
+.container {
+    width: 100%;
+    // @include gradientBlue;
+
+    // box-sizing: border-box;
+    // padding-top: 93px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.emphasize {
+    color: #f8d709 !important;
+}
+
+.card {
+    border-radius: 0.5rem;
+    background: #0d1d2e;
+    color: #fff;
+    padding: 20px;
+
+    border: 2px solid #253342;
+}
+
+@media screen and (max-width: $break-point-laptop) {
+    html {
+        font-size: 12px;
+    }
+
+    .card {
+        border-radius: 1rem;
+        background: $lightDark;
+        color: #fff;
+        padding: 20px;
+        border: 2px solid $mainColor;
+    }
+}
+
+@media screen and (max-width: $break-point-tablet) {
+    html {
+        font-size: 8px;
+    }
+
+    .card {
+        border-radius: 2rem;
+        background: $lightDark;
+        color: #fff;
+        padding: 20px;
+        border: 2px solid $mainColor;
+    }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
+.mainView {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    background: transparent;
+
+    color: white;
+    min-height: calc(100vh - 66px);
+    padding-top: 80px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+@mixin blueBorder {
+    border: 2px solid $mainColor;
+}
+
+.web3modal-modal-card {
+    background: $lightDark;
+
+    border: 2px solid $mainColor;
+
+    .web3modal-provider-wrapper {
+        background: $lightDark;
+
+        .web3modal-provider-container {
+            background: $lightDark;
+
+            .web3modal-provider-name {
+                color: #fff;
+            }
+        }
+    }
+}
+
+.screen-line {
+    width: 100vw;
+    height: 1px;
+    background: $lightGreen;
+}
+
+@media screen and (max-width: $break-point-laptop) {
+    .screen-line {
+        width: 100vw;
+    }
+}
+
+body {
+    &.overflowYhidden {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        // overflow-y: hidden !important;
+    }
+}
+
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #36b7f4 #041638;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 20px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #36b7f4;
+    border-radius: 20px;
+    border: 3px solid #36b7f4;
+}

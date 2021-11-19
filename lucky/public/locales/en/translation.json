@@ -1,0 +1,51 @@
+{
+    "home": {
+        "title": "Single-Asset Intelligent Yield Farming With <br/> Impermanent Loss Hedging",
+        "whatIsBeaver": "What is Beaver Finance",
+        "whatIsBeaverDesc": "Beaver Finance is a Single-Asset Intelligent Yield Farming platform that is the first in DeFi to integrate Liquidity Mining with the Option-based cutting-edge hedging solution for Impermanent Loss.",
+        "enterApp": "Launch APP",
+        "productAdvantage": "Innovations",
+        "adTitle1": "Dynamic Assets Allocation",
+        "adDesc1": "Under a single-asset staking mode, Asset Allocation & Pairing algorithms between multiple capital pools realize return rates comparable to dual-asset yield farming scenarios.",
+        "adTitle2": "Fully-Automatic Operations",
+        "adDesc2": "After the 1:1 asset pairing process, operations like dual-asset supplying, LP token staking, yield withdrawal, opening, & closing positions are all automatically exercised by smart contracts.",
+        "adTitle3": "Impermanent Loss Hedging",
+        "adDesc3": "Beaver hedges Impermanent Loss from liquidity mining through a set of European Option Portfolio supported by Asteria Finance Lab.",
+        "howToJoin": "How can I become a Beaver?",
+        "howToJoinDesc": "Two types of Beaver: Liquidity Providers and Impermanent Loss Hedger",
+        "role1Title": "Liquidity Provider (LP)",
+        "role1Desc": "Beaver Finance would support asset-pairs with high yields and a level of safety on major DEXs. Users can choose any asset pairs and deposit either one into Beaver LP pools and leave the rest of operations for the platform to automatically exercise.",
+        "role2Title": "Impermanent Loss Hedger  (ILH)",
+        "role2Desc": "The capital of ILH pools are used to hedge possible Impermanent Loss of LP mining positions. Assets of hedgers are guaranteed LOSSLESS with additional rewards.",
+        "getStarted": "Get started today",
+        "getStartedDesc": "Join Beaver Finace for the ultimate experience of Lossless yield farming",
+        "getStartedForFree": "Get started for free"
+    },
+    "nav": {
+        "farm": "Farm Section",
+        "hedge": "Hedge Section"
+    },
+    "copyright": "Copyright © 2021 UI8 LLC. All rights reserved",
+    "comingSoon": "Coming Soon",
+    "connectWallet": "Connect Wallet",
+    "assetsLPTotalStakedAmount": "Total Value Locked",
+    "assetsLP": {
+        "dogeswapStrategy": "DogeSwap",
+        "mdexStrategy": "MDEX",
+        "pancakeSwap": "PancakeSwap"
+    },
+    "concatAssetPool": "Combined Single Currency Pool",
+    "apy": "APY",
+    "poolTotalStaked": "Total Deposited",
+    "yourStaked": "Your Deposit",
+    "leftStakedAmount": "Remaining",
+    "deposit": "Deposit",
+    "withdraw": "Withdraw",
+    "withdrawAll": "Withdraw all",
+    "earn": "Harvest",
+    "pool": "Pool",
+    "pendingReward": "Pending Reward",
+    "operation": "Operation",
+    "harvestNetProfit": "Harvest Net Profit",
+    "netProfile": "Net Profit"
+}

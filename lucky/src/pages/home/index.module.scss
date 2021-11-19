@@ -1,0 +1,656 @@
+@import '../../App.scss';
+
+.background {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.title {
+    font-size: 32px;
+    font-family: 'main', 'PingFangSC-Semibold';
+}
+
+.secondTitle {
+    font-size: 32px;
+    font-family: 'main', 'PingFangSC-Semibold';
+}
+
+.thirdTitle {
+    font-size: 26px;
+    font-family: 'main', 'PingFangSC-Semibold';
+}
+
+.normal {
+    font-size: 20px;
+    font-family: 'main';
+    line-height: 1.6;
+}
+
+@mixin innerContent {
+    width: $viewMaxWidth;
+    margin: 0 auto;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    // padding-bottom: 100px;
+    background: transparent;
+    z-index: 2;
+    // padding-bottom: 30px;
+
+    .swapNext {
+        position: absolute;
+        bottom: 10px;
+        width: 32px;
+        height: 32px;
+        background: url(../../assets/images/home/slider-next.png) no-repeat
+            center;
+        background-size: 100%;
+        cursor: pointer;
+    }
+
+    :global {
+        .slick-vertical {
+            height: 100%;
+        }
+    }
+
+    .page {
+        width: 100%;
+        user-select: text;
+
+        &.mainWrapper {
+            box-sizing: border-box;
+            background: url(../../assets/images/home/beaver-banner.jpg)
+                no-repeat;
+            background-size: 100% 100%;
+            background-position: center;
+
+            .main {
+                @include innerContent;
+                padding: 60px 0;
+                // margin-top: 60px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+
+                .left {
+                    flex-grow: 1;
+                    box-sizing: border-box;
+                    padding-right: 20px;
+
+                    .question {
+                        display: inline-block;
+                        margin: 50px 0 35px 0;
+                        .text {
+                            padding-bottom: 4px;
+                            border-bottom: 3px solid $mainColor;
+                        }
+                    }
+                    .desc {
+                        width: 540px;
+                    }
+
+                    .enter {
+                        margin-top: 50px;
+                        font-size: 600;
+                        border-radius: 29px;
+                        font-family: 'main', 'PingFangSC-Semibold';
+                    }
+                }
+
+                .right {
+                    width: 300px;
+                    height: 473px;
+                    flex-shrink: 0;
+                    background: url(../../assets/images/home/farmer.jpg)
+                        no-repeat;
+                    background-size: 100% 100%;
+
+                    background-position: center;
+                }
+            }
+        }
+
+        &.trustBy {
+            background-color: #04192f;
+            box-sizing: border-box;
+            padding-top: 20px;
+            height: 180px;
+
+            .desc {
+                color: #66757f;
+            }
+
+            .img {
+                width: 1000px;
+                height: 75px;
+                background: url(../../assets/images/home/trust-by.png) no-repeat;
+                background-size: 100%;
+                background-position: center;
+                margin: 0 auto;
+                margin-top: 10px;
+            }
+        }
+
+        &.whatIsBeaverWrapper {
+            box-sizing: border-box;
+            background: #001123;
+
+            .whatIsBeaver {
+                @include innerContent;
+
+                padding-top: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                flex-direction: column;
+
+                .question {
+                    .title {
+                        display: block;
+                        width: 100%;
+                        text-align: center;
+                        color: $mainColor;
+                    }
+                }
+                .desc {
+                    text-align: center;
+                    line-height: 1.4;
+                    color: rgba(255, 255, 255, 0.5);
+                }
+
+                .logo {
+                    width: 400px;
+                    height: 400px;
+                }
+            }
+        }
+
+        &.advantageWrapper {
+            box-sizing: border-box;
+            background: #001123;
+
+            .advantage {
+                @include innerContent;
+                margin-top: 0px;
+                padding-bottom: 100px;
+
+                .adTitle {
+                    margin-top: 0;
+                    width: 100%;
+                    text-align: center;
+                    display: block;
+                    color: rgba(255, 255, 255, 0.5);
+                }
+
+                .ads {
+                    margin-top: 50px;
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                    width: 100%;
+                    .item {
+                        width: 385px;
+                        flex-grow: 0;
+                        flex-shrink: 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        box-sizing: border-box;
+                        padding: 20px;
+                        padding-top: 24px;
+
+                        flex-direction: column;
+                        height: 390px;
+                        position: relative;
+                        z-index: 1;
+                        border-radius: 21px;
+                        // overflow: hidden;
+                        background-color: #0a244b;
+                        background-image: url(../../assets/images/home/step-bg.png);
+                        background-position: center;
+                        background-size: 100%;
+                        background-repeat: no-repeat;
+                        &:hover {
+                            .bg {
+                                background: linear-gradient(
+                                    90deg,
+                                    #25adff 0%,
+                                    #a278ee 100%
+                                );
+                                filter: blur(18px);
+                            }
+                        }
+                        .bg {
+                            position: absolute;
+                            left: 0;
+                            right: 0;
+                            top: 0;
+                            bottom: 0;
+                            background: #232323;
+                            opacity: 0.3;
+                            z-index: -1;
+                        }
+                        .img {
+                            position: absolute;
+                            right: 0;
+                            bottom: -50px;
+                            width: 160px;
+                            height: 160px;
+                            z-index: -1;
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            background-position: center bottom;
+                        }
+
+                        .thirdTitle {
+                            text-align: center;
+                            color: $mainColor;
+                        }
+
+                        // .normal {
+                        //     text-align: center;
+                        // }
+
+                        &:nth-child(1) {
+                            .img {
+                                background-image: url(../../assets/images/home/step1.png);
+                            }
+                        }
+
+                        &:nth-child(2) {
+                            .img {
+                                background-image: url(../../assets/images/home/step2.png);
+                            }
+                        }
+
+                        &:nth-child(3) {
+                            .img {
+                                background-image: url(../../assets/images/home/step3.png);
+                            }
+                        }
+
+                        .step {
+                            color: #72d9f5;
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.joinWrapper {
+            line-height: 0;
+            box-sizing: border-box;
+            background: linear-gradient(135deg, #08003d 0%, #071c64 100%);
+            .join {
+                @include innerContent;
+
+                padding-top: 50px;
+                .qs {
+                    .text {
+                        width: 100%;
+                        padding-bottom: 18px;
+                        text-align: center;
+                        color: $mainColor;
+                    }
+                }
+
+                .desc {
+                    width: 100%;
+                    color: rgba(255, 255, 255, 0.5);
+                    text-align: center;
+                }
+
+                .tabWrapper {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 50px;
+                    flex-direction: column;
+
+                    .tabContent {
+                        margin-top: 32px;
+                        width: 70%;
+                        text-align: center;
+                        // color: rgba(255, 255, 255, 0.5);
+                    }
+
+                    :global {
+                        .MuiTab-root {
+                            max-width: inherit;
+                            width: max-content;
+                            font-size: 20px;
+                            font-family: 'main', 'PingFangSC-Semibold';
+                        }
+
+                        .MuiButtonBase-root {
+                            &:first-child {
+                                margin-right: 50px;
+                            }
+                        }
+                    }
+                }
+
+                .roles {
+                    margin-top: 50px;
+                    display: none;
+                    align-items: flex-start;
+                    justify-content: center;
+
+                    .item {
+                        position: relative;
+                        box-sizing: border-box;
+                        width: 181px;
+                        height: 60px;
+                        padding: 16px;
+                        border-radius: 29px;
+                        overflow: hidden;
+                        z-index: 0;
+                        &:hover {
+                            .bg {
+                                background: linear-gradient(
+                                    90deg,
+                                    #25adff 0%,
+                                    #5037D9 100%
+                                );
+                                filter: blur(18px);
+                            }
+                        }
+
+                        .bg {
+                            position: absolute;
+                            left: 0;
+                            right: 0;
+                            top: 0;
+                            bottom: 0;
+                            background: transparent;
+                            opacity: 0.3;
+                            z-index: -1;
+                        }
+
+                        .thirdTitle {
+                            text-align: center;
+                            line-height: 1.8;
+                            display: block;
+                            width: max-content;
+                            margin: 0 auto;
+                            border-bottom: 6px solid #6b50ff;
+                        }
+
+                        .normal {
+                            text-align: center;
+                        }
+
+                        .label {
+                            color: #fff;
+                            height: 24px;
+                            background: #58bd7d;
+                            border-radius: 4px;
+                            display: inline-block;
+                            padding: 0 4px;
+                            line-height: 1.8;
+                        }
+
+                        &:first-child {
+                            margin-right: 40px;
+                            .label {
+                                background: #ff6838;
+                            }
+                        }
+                    }
+                }
+
+                .demoImg {
+                    margin-top: 50px;
+                    width: 100%;
+                    height: auto;
+                }
+
+                .enter {
+                    width: 48px;
+                    height: 48px;
+                    background: url(../../assets/images/home/right.png)
+                        no-repeat;
+                    background-size: 100% 100%;
+                    background-position: center center;
+                    margin: 0 auto;
+                    margin-top: 36px;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        &.startWrapper {
+            box-sizing: border-box;
+            background-size: 100% auto;
+            background-position: center;
+            background-color: #04192f;
+
+            .start {
+                @include innerContent;
+
+                padding-top: 60px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                padding-bottom: 30px;
+
+                .right {
+                    flex-grow: 1;
+                    box-sizing: border-box;
+                    padding-left: 50px;
+
+                    .question {
+                        display: inline-block;
+                        margin: 50px 0 35px 0;
+                        .text {
+                            padding-bottom: 4px;
+                            border-bottom: 3px solid $mainColor;
+                        }
+                    }
+                    .desc {
+                        width: 100%;
+                        color: rgba(255, 255, 255, 0.5);
+                    }
+
+                    .enter {
+                        margin-top: 50px;
+                        font-size: 600;
+                        border-radius: 30px;
+                        font-family: 'main', 'PingFangSC-Semibold';
+                    }
+                }
+
+                .left {
+                    width: 420px;
+                    height: 480px;
+                    flex-shrink: 0;
+                    background: url(../../assets/images/home/get-start.png)
+                        no-repeat;
+                    background-size: 100% 100%;
+
+                    background-position: center;
+                }
+            }
+        }
+    }
+}
+
+@mixin mobileInnerContent {
+    width: 100%;
+    padding: 0 2rem;
+}
+
+@media screen and (max-width: $break-point-tablet) {
+    .wrapper {
+        // padding-left: 2rem;
+        // padding-right: 2rem;
+        overflow-x: hidden;
+        width: 100vw;
+        box-sizing: border-box;
+
+        .page {
+            &.mainWrapper {
+                @include mobileInnerContent;
+                .main {
+                    display: block;
+                    position: relative;
+                    width: 100%;
+                    z-index: 0;
+
+                    .right {
+                        position: absolute;
+                        right: 0;
+                        top: 25px;
+                        z-index: -1;
+                        width: 128px;
+                        height: 204px;
+                    }
+                }
+            }
+
+            &.trustBy {
+                background-color: #04192f;
+                box-sizing: border-box;
+                padding-top: 0;
+                height: 110px;
+
+                .desc {
+                    color: #66757f;
+                    margin-top: 0;
+                }
+
+                .img {
+                    width: 100%;
+                    height: 50px;
+                    background: url(../../assets/images/home/trust-by.png)
+                        no-repeat;
+                    background-size: 100%;
+                    background-position: center;
+                    margin: 0 auto;
+                    margin-top: 10px;
+                }
+            }
+
+            &.whatIsBeaverWrapper {
+                @include mobileInnerContent;
+                .whatIsBeaver {
+                    width: 100%;
+                    margin-top: 0;
+                    .logo {
+                        width: 200px;
+                        height: 200px;
+                    }
+                }
+            }
+
+            &.advantageWrapper {
+                @include mobileInnerContent;
+                .advantage {
+                    // margin-top: 50px;
+                    width: 100%;
+                    .adTitle {
+                        margin-top: 0;
+                    }
+                    .ads {
+                        flex-direction: column;
+                        width: 100%;
+                        margin-top: 0;
+
+                        .item {
+                            padding: 20px;
+                            padding-bottom: 80px;
+                            justify-content: flex-start;
+
+                            margin-top: 50px;
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+
+            &.joinWrapper {
+                @include mobileInnerContent;
+                .join {
+                    width: 100%;
+                    .tabWrapper {
+                        display: none;
+                    }
+                    .demoImg {
+                        margin-top: 30px;
+                    }
+                    .roles {
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+                        .item {
+                            width: 100%;
+                            height: auto;
+                            &:first-child {
+                                margin-right: 0;
+                                margin-bottom: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+            &.startWrapper {
+                @include mobileInnerContent;
+                .start {
+                    display: block;
+                    position: relative;
+                    width: 100%;
+                    z-index: 0;
+
+                    .left {
+                        position: absolute;
+                        left: 50%;
+                        top: 240px;
+                        z-index: -1;
+                        width: 146px;
+                        height: 161px;
+                        transform: translate(-50%, -50%);
+                    }
+                    .right {
+                        text-align: center;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        padding-left: 0;
+
+                        .enter {
+                            margin-top: 200px;
+                            padding: 1rem 1.2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+
+    .secondTitle {
+        font-size: 3rem;
+    }
+
+    .thirdTitle {
+        font-size: 2.5rem;
+    }
+
+    .normal {
+        font-size: 16px;
+    }
+}

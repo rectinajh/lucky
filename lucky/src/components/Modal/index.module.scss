@@ -1,0 +1,73 @@
+@import '../../App.scss';
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    position: relative;
+    min-width: 200px;
+    max-width: 95vw;
+    padding: 0;
+    outline: none;
+
+    border-radius: 16px !important;
+}
+
+.close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+    width: 32px !important;
+    height: 32px !important;
+    background: url(../../assets/images/close.png) no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.customWrapper {
+    width: 460px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    // padding: 20px;
+    overflow: hidden;
+
+    .imgContainer {
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 0;
+
+        .animation {
+            position: absolute;
+            top: -20%;
+            left: 0;
+            right: 0;
+            bottom: 20%;
+            z-index: -1;
+        }
+    }
+
+    .footer {
+        width: 100%;
+        margin-top: 20px;
+        padding-bottom: 20px;
+
+        .button {
+            width: 260px;
+        }
+    }
+}
+
+@media screen and (max-width: $break-point-tablet) {
+    .customWrapper {
+        width: calc(100vw - 10rem);
+    }
+}

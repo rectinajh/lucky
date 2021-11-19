@@ -1,0 +1,118 @@
+@import '../../App.scss';
+
+.button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    font-family: $font-main;
+
+    &.middle {
+        padding: 6px 12px;
+        font-size: 12px;
+        border-radius: 20px;
+    }
+
+    &.normal {
+        padding: 8px 12px;
+        font-size: 14px;
+        border-radius: 20px;
+    }
+
+    &.large {
+        padding: 15px 20px;
+        font-size: 22px;
+        border-radius: 20px;
+    }
+
+    &.primary {
+        background: $mainColor;
+        color: #fff;
+
+        &:hover,
+        &:focus,
+        &:active {
+            // @include gradientGreen;
+        }
+    }
+
+    &.dark {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+        color: #4d6184;
+    }
+
+    &.transparent {
+        background: transparent;
+        color: $mainColor;
+        border: 1px solid $mainColor;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: $mainColor;
+        }
+    }
+
+    &.disabled {
+        background: grey;
+        border-image: none;
+        box-shadow: none;
+        cursor: not-allowed;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background: grey;
+            border-image: none;
+            box-shadow: none;
+            cursor: not-allowed;
+        }
+    }
+
+    &.loading {
+        color: transparent;
+    }
+
+    .loadingIcon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -12px;
+        margin-left: -12px;
+        color: #fff;
+    }
+}
+
+@media screen and (max-width: $break-point-laptop) {
+    .button {
+        &.normal {
+            font-size: 1.8rem;
+            padding: 1.2rem 1.6rem;
+        }
+
+        &.large {
+            font-size: 2.3rem;
+            padding: 1.6rem 2rem;
+        }
+    }
+}
+
+@media screen and (max-width: $break-point-tablet) {
+    .button {
+        &.normal {
+            font-size: 1.8rem;
+            padding: 2rem 2.5rem;
+        }
+
+        &.large {
+            font-size: 2.3rem;
+            padding: 2.5rem 3rem;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+@import '../../App.scss';
+
+.wrapper {
+    background: #001123;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    .mainView {
+        width: 100%;
+        height: 100vh;
+        overflow-y: scroll;
+
+        padding-left: 30px;
+        padding-top: 20px;
+        box-sizing: border-box;
+        padding-bottom: 50px;
+
+        .content {
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        .child {
+            margin-top: 20px;
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: $break-point-tablet) {
+    .wrapper {
+        .mainView {
+            padding: 1rem;
+            width: 100%;
+            padding-top: 90px;
+            padding-bottom: 3rem;
+
+            .content {
+                width: 100%;
+                margin: 0;
+            }
+        }
+    }
+}

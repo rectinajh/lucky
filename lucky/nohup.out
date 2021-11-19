@@ -1,0 +1,122 @@
+yarn run v1.22.15
+$ BROWSER=none react-app-rewired start
+The following changes are being made to your tsconfig.json file:
+  - compilerOptions.baseUrl must not be set (absolute imports are not supported (yet))
+  - compilerOptions.paths must not be set (aliased imports are not supported)
+
+Starting the development server...
+
+Compiled successfully!
+
+You can now view create-react-app in the browser.
+
+  Local:            http://localhost:3000/
+  On Your Network:  http://172.31.132.58:3000/
+
+Note that the development build is not optimized.
+To create a production build, use yarn build.
+
+Done in 34526.64s.
+yarn run v1.22.15
+$ BROWSER=none react-app-rewired start
+The following changes are being made to your tsconfig.json file:
+  - compilerOptions.baseUrl must not be set (absolute imports are not supported (yet))
+  - compilerOptions.paths must not be set (aliased imports are not supported)
+
+Starting the development server...
+
+events.js:377
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: ENOSPC: System limit for number of file watchers reached, watch '/root/beaver-interface/public'
+    at FSWatcher.<computed> (internal/fs/watchers.js:243:19)
+    at Object.watch (fs.js:1586:34)
+    at createFsWatchInstance (/root/beaver-interface/node_modules/chokidar/lib/nodefs-handler.js:38:15)
+    at setFsWatchListener (/root/beaver-interface/node_modules/chokidar/lib/nodefs-handler.js:81:15)
+    at FSWatcher.NodeFsHandler._watchWithNodeFs (/root/beaver-interface/node_modules/chokidar/lib/nodefs-handler.js:233:14)
+    at FSWatcher.NodeFsHandler._handleDir (/root/beaver-interface/node_modules/chokidar/lib/nodefs-handler.js:429:19)
+    at FSWatcher.<anonymous> (/root/beaver-interface/node_modules/chokidar/lib/nodefs-handler.js:477:19)
+    at FSWatcher.<anonymous> (/root/beaver-interface/node_modules/chokidar/lib/nodefs-handler.js:482:16)
+    at FSReqCallback.oncomplete (fs.js:192:5)
+Emitted 'error' event on FSWatcher instance at:
+    at FSWatcher._handleError (/root/beaver-interface/node_modules/chokidar/index.js:260:10)
+    at createFsWatchInstance (/root/beaver-interface/node_modules/chokidar/lib/nodefs-handler.js:40:5)
+    at setFsWatchListener (/root/beaver-interface/node_modules/chokidar/lib/nodefs-handler.js:81:15)
+    [... lines matching original stack trace ...]
+    at FSReqCallback.oncomplete (fs.js:192:5) {
+  errno: -28,
+  syscall: 'watch',
+  code: 'ENOSPC',
+  path: '/root/beaver-interface/public',
+  filename: '/root/beaver-interface/public'
+}
+error Command failed with exit code 1.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+yarn run v1.22.15
+$ BROWSER=none react-app-rewired start
+The following changes are being made to your tsconfig.json file:
+  - compilerOptions.baseUrl must not be set (absolute imports are not supported (yet))
+  - compilerOptions.paths must not be set (aliased imports are not supported)
+
+Starting the development server...
+
+events.js:377
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: ENOSPC: System limit for number of file watchers reached, watch '/root/beaver-interface/public'
+    at FSWatcher.<computed> (internal/fs/watchers.js:243:19)
+    at Object.watch (fs.js:1586:34)
+    at createFsWatchInstance (/root/beaver-interface/node_modules/chokidar/lib/nodefs-handler.js:38:15)
+    at setFsWatchListener (/root/beaver-interface/node_modules/chokidar/lib/nodefs-handler.js:81:15)
+    at FSWatcher.NodeFsHandler._watchWithNodeFs (/root/beaver-interface/node_modules/chokidar/lib/nodefs-handler.js:233:14)
+    at FSWatcher.NodeFsHandler._handleDir (/root/beaver-interface/node_modules/chokidar/lib/nodefs-handler.js:429:19)
+    at FSWatcher.<anonymous> (/root/beaver-interface/node_modules/chokidar/lib/nodefs-handler.js:477:19)
+    at FSWatcher.<anonymous> (/root/beaver-interface/node_modules/chokidar/lib/nodefs-handler.js:482:16)
+    at FSReqCallback.oncomplete (fs.js:192:5)
+Emitted 'error' event on FSWatcher instance at:
+    at FSWatcher._handleError (/root/beaver-interface/node_modules/chokidar/index.js:260:10)
+    at createFsWatchInstance (/root/beaver-interface/node_modules/chokidar/lib/nodefs-handler.js:40:5)
+    at setFsWatchListener (/root/beaver-interface/node_modules/chokidar/lib/nodefs-handler.js:81:15)
+    [... lines matching original stack trace ...]
+    at FSReqCallback.oncomplete (fs.js:192:5) {
+  errno: -28,
+  syscall: 'watch',
+  code: 'ENOSPC',
+  path: '/root/beaver-interface/public',
+  filename: '/root/beaver-interface/public'
+}
+error Command failed with exit code 1.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+yarn run v1.22.15
+$ BROWSER=none react-app-rewired start
+The following changes are being made to your tsconfig.json file:
+  - compilerOptions.baseUrl must not be set (absolute imports are not supported (yet))
+  - compilerOptions.paths must not be set (aliased imports are not supported)
+
+Starting the development server...
+
+Compiled successfully!
+
+You can now view create-react-app in the browser.
+
+  Local:            http://localhost:3000/
+  On Your Network:  http://172.31.132.58:3000/
+
+Note that the development build is not optimized.
+To create a production build, use yarn build.
+
+Compiling...
+Compiled successfully!
+Compiling...
+Compiled successfully!
+Compiling...
+Compiled successfully!
+Compiling...
+Compiled successfully!
+Compiling...
+Compiled successfully!
+Compiling...
+Compiled successfully!
+Compiling...

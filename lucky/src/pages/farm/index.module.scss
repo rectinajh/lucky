@@ -1,0 +1,231 @@
+@import '../../App.scss';
+.wrapper {
+    width: 100%;
+    .poolWrapper {
+        margin-top: 20px;
+
+        .switch {
+            // width: 332px;
+            // height: 44px;
+            // border-radius: 12px;
+            // border: 1px solid #71d6f4;
+            box-sizing: border-box;
+            padding: 2px;
+            display: flex;
+            flex-direction: row;
+
+            .item {
+                // flex: 50% 0 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-sizing: border-box;
+                padding: 10px 20px;
+                font-size: 16px;
+                cursor: pointer;
+                margin-right: 20px;
+                font-family: $font-main;
+
+                border-radius: 20px;
+                background: rgba(255, 255, 255, 0.1);
+
+                color: rgba(255, 255, 255, 0.5);
+
+                &.active {
+                    background: #4d6184;
+
+                    color: #ffffff;
+                }
+            }
+        }
+
+        .pool {
+            background: #04192f;
+            box-sizing: border-box;
+            padding: 20px;
+            border-radius: 16px;
+            margin-top: 20px;
+            width: 100%;
+
+            .assets {
+                margin-top: 20px;
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+                flex-direction: row;
+
+                .item {
+                    flex: 48% 0 0;
+                    // border: 1px solid #5fb8ea;
+                    background-color: #001123;
+                    border-radius: 16px;
+                    box-sizing: border-box;
+                    padding: 10px;
+
+                    .title {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        .left {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            .img {
+                                width: 30px;
+                                height: 30px;
+                                border-radius: 15px;
+                                overflow: hidden;
+                                margin-right: 10px;
+                            }
+                        }
+
+                        .right {
+                            border-radius: 14px;
+                            background: rgba(255, 255, 255, 0.05);
+
+                            color: #4d6184;
+                            padding: 4px 12px;
+                            cursor: pointer;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            .harvestIcon {
+                                width: 16px;
+                                height: 16px;
+                                background: url(../../assets/images/harvest.png)
+                                    no-repeat;
+                                background-size: 100%;
+                                background-position: center;
+                                margin-left: 4px;
+                            }
+                        }
+                    }
+
+                    .poolInfo {
+                        margin-top: 15px;
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: space-between;
+                        > div {
+                            display: flex;
+                            align-items: center;
+                            justify-self: flex-start;
+                            flex-direction: column;
+                        }
+
+                        .apy {
+                            flex: 25% 0 0;
+
+                            .profileUpIcon {
+                                width: 10px;
+                                height: 8px;
+                                background: url(../../assets/images/profit-up.png)
+                                    no-repeat;
+                                background-position: center;
+                                background-size: 100%;
+                                margin-left: 4px;
+                            }
+                        }
+
+                        .poolTvl {
+                            flex: 50% 0 0;
+                            box-sizing: border-box;
+                            padding: 0 10px;
+                        }
+
+                        .yourTvl {
+                            flex: 25% 0 0;
+                        }
+                    }
+
+                    .progress {
+                        margin-top: 8px;
+                        width: 100%;
+                        height: 8px;
+                        border-radius: 4px;
+                        background: rgba(228, 228, 228, 0.5);
+                        position: relative;
+
+                        .value {
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            bottom: 0;
+                            border-radius: 4px;
+
+                            background: linear-gradient(
+                                90deg,
+                                #0b3276 0%,
+                                #6b50ff 100%
+                            );
+                        }
+                    }
+
+                    .buttons {
+                        margin-top: 20px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        .button {
+                            height: 44px;
+                            font-size: 14px;
+                            border-radius: 20px;
+
+                            &:first-child {
+                                flex-shrink: 0;
+                                flex-grow: 0;
+                                margin-right: 20px;
+                                padding-left: 34px;
+                                padding-right: 34px;
+                            }
+
+                            &:last-child {
+                                flex-shrink: 0;
+                                flex-grow: 1;
+                            }
+
+                            &.deposit {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                .icon {
+                                    margin-left: 4px;
+                                    width: 24px;
+                                    height: 24px;
+
+                                    background: url(../../assets/images/deposit.png)
+                                        no-repeat;
+                                    background-position: center;
+                                    background-size: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $break-point-tablet) {
+    .wrapper {
+        .poolWrapper {
+            .pool {
+                .assets {
+                    flex-direction: column;
+
+                    > .item {
+                        width: 100%;
+
+                        &:last-child {
+                            margin-top: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

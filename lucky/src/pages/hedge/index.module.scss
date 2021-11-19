@@ -1,0 +1,68 @@
+@import '../../App.scss';
+.wrapper {
+    margin-top: 20px;
+
+    .table {
+        background: #04192f;
+        margin-top: 20px;
+
+        border-radius: 12px;
+        overflow: hidden;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 20px;
+
+        :global {
+            .MuiTableCell-head {
+                color: #66757f !important;
+                border: none !important;
+            }
+
+            .MuiTableCell-root {
+                border: none !important;
+                font-family: $font-main !important;
+                color: #66757f;
+            }
+
+            .MuiTableBody-root {
+                .MuiTableCell-root {
+                    border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+                    color: #fff;
+                }
+            }
+        }
+
+        .pool {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            .tokenIcon {
+                width: 30px;
+                height: 30px;
+                border-radius: 15px;
+                overflow: hidden;
+                margin-right: 10px;
+            }
+        }
+
+        .apy {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .buttons {
+            > button {
+                flex: 47% 0 0;
+                border-radius: 20px;
+            }
+        }
+
+        .earn {
+            border-radius: 20px;
+
+            width: 100%;
+        }
+    }
+}

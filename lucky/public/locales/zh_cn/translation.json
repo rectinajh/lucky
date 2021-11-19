@@ -1,0 +1,48 @@
+{
+    "home": {
+        "title": "BSC链上首家<br />无常损失对冲智能挖矿平台",
+        "whatIsBeaver": "什么是Beaver Finance",
+        "whatIsBeaverDesc": "海狸金融(Beaver Finance)是将DeFi最流行的LP流动性挖矿和最先进的期权组合对冲无常损失相结合的单币质押智能收益平台。",
+        "enterApp": "点击进入Beaver",
+        "productAdvantage": "产品优势",
+        "adTitle1": "资金调度组合",
+        "adDesc1": "海狸挖矿设计了各个资金池之间调度与组合策略，实现了单币质押获得双币挖矿的回报率。",
+        "adTitle2": "全自动操作",
+        "adDesc2": "海狸通过合约实现一站式服务：双币质押，获取LP并挖矿，收益提取和复投，开平仓等操作。",
+        "adTitle3": "期权对冲无常损失",
+        "adDesc3": "海狸通过由Asteria Finance Lab 提供的欧式期权（European Option Protfolio）方式来对冲LP流动性挖矿无常损失。",
+        "howToJoin": "我可以怎么参与Beaver",
+        "howToJoinDesc": "用户可以选择成为2种角色：矿工(Farmer)和对冲者(Hedger)",
+        "role1Title": "矿工(Farmer)/挖矿区",
+        "role1Desc": "海狸金融会支持每个DEX平台上高收益并且安全的交易对，用户只要持有其中任何一种数字资产便可以质押，平台会自动将资产和相应的另一种资产进行配对并质押进相应DEX中去获取双币流动性挖矿收益。",
+        "role2Title": "对冲者(Hedger)/对冲区",
+        "role2Desc": "只需将任何一种平台支持的数字资产质押为LP去提供无常对冲从而获得奖励。"
+    },
+    "nav": {
+        "farm": "单币LP池",
+        "hedge": "无损单币对冲池"
+    },
+    "copyright": "Copyright © 2021 UI8 LLC. All rights reserved",
+    "comingSoon": "敬请期待",
+    "connectWallet": "连接钱包",
+    "assetsLPTotalStakedAmount": "TVL总量",
+    "assetsLP": {
+        "dogeswapStrategy": "DogeSwap",
+        "mdexStrategy": "MDEX",
+        "pancakeSwap": "PancakeSwap"
+    },
+    "concatAssetPool": "组合单币池",
+    "apy": "年华收益率",
+    "poolTotalStaked": "池子总存入",
+    "yourStaked": "你的存入",
+    "leftStakedAmount": "剩余可投",
+    "deposit": "存入",
+    "withdraw": "提取",
+    "withdrawAll": "全部提取",
+    "earn": "收获",
+    "pool": "池子",
+    "pendingReward": "待奖励",
+    "operation": "操作",
+    "harvestNetProfit": "收获利润",
+    "netProfile": "利润"
+}

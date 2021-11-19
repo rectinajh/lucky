@@ -1,0 +1,47 @@
+.wrapper {
+    width: 100%;
+    height: 145px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+    justify-content: center;
+    flex-direction: column;
+    background: url(../../../assets/images/home/step-bg.png) no-repeat;
+    background-position: center;
+    background-size: 45%;
+    background-color: #00162d;
+    position: relative;
+
+    .top {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 16px;
+
+        background: linear-gradient(
+            135deg,
+            #061a39 0%,
+            #394088 48%,
+            #061a39 100%
+        );
+    }
+
+    .amountWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: max-content;
+        // height: 76px;
+        // border-radius: 10px;
+        // border: 1px solid #ffffff;
+        padding: 0 16px;
+
+        img {
+            width: 70px;
+            height: 70px;
+        }
+    }
+}

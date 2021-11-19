@@ -1,0 +1,42 @@
+.container {
+    border: none;
+    width: 560px;
+}
+
+.content {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    background: #001123;
+    .changeButton {
+        padding: 6px 10px;
+        // border-radius: 4px;
+        font-size: 14px;
+    }
+
+    .logo {
+        width: 32px;
+        height: 32px;
+        margin-right: 10px;
+    }
+
+    .bottom {
+        margin-top: 20px;
+    }
+
+    .funcWrapper {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        &:first-child {
+            margin-right: 30px;
+        }
+
+        .text {
+            margin-left: 10px;
+        }
+    }
+}
