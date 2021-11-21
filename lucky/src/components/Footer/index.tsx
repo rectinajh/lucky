@@ -8,6 +8,14 @@ export default function Footer() {
     return (
         <div className={style.footer}>
             <Row align="between" customClass={style.content}>
+                <img
+                    className="logo"
+                    src="/images/header-logo.png"
+                    alt="Metis logo"
+                />
+
+                <p>© 2021 Beaver Finance. All Rights Reserved</p>
+
                 <div className={style.soialMedia}>
                     <a
                         href={LINKS.twitter}

@@ -1,6 +1,7 @@
 {
     "home": {
-        "title": "Single-Asset Intelligent Yield Farming With <br/> Impermanent Loss Hedging",
+        "title1": "Single-Asset Intelligent Yield Farming With <br/>",
+        "title2": "Impermanent Loss Hedging",
         "whatIsBeaver": "What is Beaver Finance",
         "whatIsBeaverDesc": "Beaver Finance is a Single-Asset Intelligent Yield Farming platform that is the first in DeFi to integrate Liquidity Mining with the Option-based cutting-edge hedging solution for Impermanent Loss.",
         "enterApp": "Launch APP",

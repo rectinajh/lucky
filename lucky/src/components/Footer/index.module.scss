@@ -1,12 +1,15 @@
 @import '../../App.scss';
+
 .footer {
     position: relative;
     z-index: 1;
     flex-grow: 0;
     flex-shrink: 0;
     width: 100%;
-    background: #141416;
-    height: 66px;
+    background: #04192f;
+
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+    height: 96px;
 
     .content {
         width: $viewMaxWidth;
@@ -34,6 +37,7 @@
                 background-size: 100%;
                 background-position: center;
                 background-repeat: no-repeat;
+
                 &:not(:last-child) {
                     margin-right: 20px;
                 }
@@ -64,7 +68,7 @@
         .content {
             width: 100%;
             padding: 0 2rem;
-            justify-content: center;
+            justify-content: left;
             align-items: center;
 
             .soialMedia {

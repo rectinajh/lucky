@@ -42,7 +42,7 @@ export default function Pool({
     return (
         <div className={style.pool}>
             <Row lineHeight="none">
-                {token1.name}-{token2.name}
+                {token1.name}-{token2.name} LP Combined Single Currency Pool
             </Row>
             <div className={style.assets}>
                 <Asset

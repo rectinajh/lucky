@@ -82,11 +82,19 @@ export default function Home() {
                         <div className={style.main}>
                             <div className={style.left}>
                                 <div
-                                    className={style.title}
+                                    className={cx(style.normal, style.desc)}
                                     dangerouslySetInnerHTML={{
-                                        __html: t('home.title'),
+                                        __html: t('home.title1'),
                                     }}
                                 ></div>
+
+                                <div
+                                    className={style.title}
+                                    dangerouslySetInnerHTML={{
+                                        __html: t('home.title2'),
+                                    }}
+                                ></div>
+
                                 <Button
                                     className={style.enter}
                                     onClick={comingSoon}
@@ -103,7 +111,7 @@ export default function Home() {
                             align="center"
                             customClass={cx(style.desc, style.normal)}
                         >
-                            Supported by  Asteria Finance Lab
+                            Supported by Asteria Finance Lab
                         </Row>
                         <div className={cx(style.img)}></div>
                     </div>
